@@ -31,4 +31,4 @@ class GameUpdateView(UpdateView):
 class GameDeleteView(DeleteView):
     template_name = 'game-delete.html'
     model = Game
-    success_url = reverse_lazy('list_view')
+    success_url = reverse_lazy('game-list')

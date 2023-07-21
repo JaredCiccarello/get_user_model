@@ -1,9 +1,8 @@
-{% extends 'base.html' %}
-
+{% extends '_base.html' %}
 
 {% block content %}
-  <h1>Update Game</h1>
-    <form action="" method="POST">
+  <h1>Create a Snack</h1>
+  <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="SAVE">

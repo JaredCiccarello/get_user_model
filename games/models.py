@@ -14,5 +14,5 @@ class Game(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('detail_view', args=[str(self.id)])
+        return reverse('game-detail', args=[str(self.id)])
     # HERE we need to create the str, when we look in our admin site, we want information.
